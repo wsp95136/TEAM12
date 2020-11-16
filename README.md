@@ -87,3 +87,17 @@
 ![系統環境圖DFD](DFD_enviro.png)
 ### DFD 圖0
 ![DFD0](DFD0.jpg)
+### UML類別圖
+![UML](UML.jpg)
+### 使用案例1 循序圖
+![sq1](sq1.png)
+### 使用案例1 活動圖
+![act1](act1.png)
+### 使用案例2 循序圖
+![sq1](sq2.jpg)
+### 使用案例2 活動圖
+![act1](act2.jpg)
+### 使用案例3 循序圖
+![sq1](sq3.png)
+### 使用案例3 活動圖
+![act1](act3.png)
