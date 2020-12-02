@@ -106,3 +106,59 @@
 ![sq1](sq3.png)
 ### 使用案例3 活動圖
 ![act1](act3.png)
+
+
+### 登入
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 帳號 | ID | Varchar(15) |
+| 密碼 | Password | Varchar(32) |
+***
+### 註冊、個人資料
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 學號 | ID | Varchar(15) |
+| 系級 | Department | Varchar(20) |
+| 姓名 | Name | Varchar(30) |
+| 性別 | Gender | Char(1) |
+| 生日 | Birth | Date(yyyy-mm-dd) |
+| 身分證字號 | Identity | Varchar(10) |
+| 綁定手機 | Phone | Varchar(15) |
+| 設定密碼 |Password | Varchar(32) |
+| 確認密碼 |Password_check | Varchar(32) |
+| 上傳大頭照 | Images_Name | Chat(40) |
+***
+### 駕照驗證
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 車號 | License_plate | Varchar(10) |
+| 車款 | Model | Varchar(20) |
+| 廠牌 | Brand | Varchar(20) |
+| 附加配備 | Add_eqt | Varchar(40) |
+| 上傳駕照 | Drivers_license | Varchar(40) |
+| 上傳行照 | Vehicle_license | Varchar(40) |
+***
+### 新增需求
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 時間 | Date;Time | Date(yyyy-mm-dd);Time() |
+| 上車點 | Start | Varchar(50) |
+| 下車點 | End | Varchar(50) |
+| 有無安全帽 | Helmet_check | Char(1) |
+| 可提供酬勞 | Pay | Varchar(50) |
+| 備註說明 | Remarks | Varchar(100) |
+***
+### 新增供給
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 時間 | Date;Time | Date(yyyy-mm-dd);Time() |
+| 到 | End_date;End_time | Date(yyyy-mm-dd);Time() |
+| 可接受上車範圍 | Range | Varchar(50) |
+| 可接受車程時間 | Drive_time | Varchar(10) |
+| 有無安全帽 | Helmet_check | Char(1) |
+| 備註說明 | Remarks | Varchar(100) |
+***
+### 聊天室
+| 欄位名稱 | 資料名稱 | 資料型態 |
+| :----------: |:----------: | :----------:|
+| 訊息框 | Texting_box | Varchar(100) |
