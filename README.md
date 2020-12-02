@@ -107,59 +107,62 @@
 ### 使用案例3 活動圖
 ![act1](act3.png)
 ***
+## storyboard
 ![登入註冊](登入註冊.PNG)
-### 登入
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 帳號 | ID | Varchar(15) |
-| 密碼 | Password | Varchar(32) |
+### 登入 
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 帳號 | ID | Varchar(15) | 學生學號或教職員編號 |
+| 密碼 | Password | Varchar(32) | 是否吻合該帳號設置的密碼 |
+
 ### 註冊、個人資料
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 學號 | ID | Varchar(15) |
-| 系級 | Department | Varchar(20) |
-| 姓名 | Name | Varchar(30) |
-| 性別 | Gender | Char(1) |
-| 生日 | Birth | Date(yyyy-mm-dd) |
-| 身分證字號 | Identity | Varchar(10) |
-| 綁定手機 | Phone | Varchar(15) |
-| 設定密碼 |Password | Varchar(32) |
-| 確認密碼 |Password_check | Varchar(32) |
-| 上傳大頭照 | Images_Name | Varchar(40) |
-***
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 學號 | ID | Varchar(15) |學生的學號或教職員編號，不得有中文字及符號 |
+| 系級 | Department | Varchar(20) | 中文字串，不得為數字或英文及符號 |
+| 姓名 | Name | Varchar(30) | 中文字串，不得為數字或英文及符號 |
+| 性別 | Gender | Char(1) | 二選一的單選 |
+| 生日 | Birth | Date(yyyy-mm-dd) | 格式為YYYY/MM/DD |
+| 身分證字號 | Identity | Varchar(10) | 限十個字串，首位為英文且與數字組成 |
+| 綁定手機 | Phone | Varchar(15) | 十個數字字串，前兩碼為"09" |
+| 電子郵件 |  |   | 字串裡必須有"@"與"."  |
+| 設定密碼 |Password | Varchar(32) | 6～12個字元，至少要有2個以上英文，兩個以上數字，不得有符號 |
+| 確認密碼 |Password_check | Varchar(32) | 與"密碼"相同 |
+| 上傳大頭照 | Images_Name | Varchar(40) | 格式檔案為jpg、jpeg、bmp、png、pdf |
 ### 駕照驗證
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 車號 | License_plate | Varchar(10) |
-| 車款 | Model | Varchar(20) |
-| 廠牌 | Brand | Varchar(20) |
-| 附加配備 | Add_eqt | Varchar(40) |
-| 上傳駕照 | Drivers_license | Varchar(40) |
-| 上傳行照 | Vehicle_license | Varchar(40) |
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 車號 | License_plate | Varchar(10) |限六到八個字元，字串裡必須有一個"－" |
+| 車款 | Model | Varchar(20) | 二十字元以內 |
+| 廠牌 | Brand | Varchar(20) | 選擇一項 |
+| 附加配備 | Add_eqt | Varchar(40) | 四十字元以內 |
+| 上傳駕照 | Drivers_license | Varchar(40) | 檔案格式為jpg、jpeg、bmp、png、pdf |
+| 上傳行照 | Vehicle_license | Varchar(40) | 檔案格式為jpg、jpeg、bmp、png、pdf |
+
 ***
 
 ![刊登聊天](刊登聊天.PNG)
 ### 新增需求
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 時間 | Date;Time | Date(yyyy-mm-dd);Time() |
-| 上車點 | Start | Varchar(50) |
-| 下車點 | End | Varchar(50) |
-| 有無安全帽 | Helmet_check | Char(1) |
-| 可提供酬勞 | Pay | Varchar(50) |
-| 備註說明 | Remarks | Varchar(100) |
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 時間 | Date;Time | Date(yyyy-mm-dd);Time() | 選擇一天日期 |
+| 上車點 | Start | Varchar(50) | 不超過五十個字元的字串 |
+| 下車點 | End | Varchar(50) |不超過五十個字元的字串 |
+| 有無安全帽 | Helmet_check | Char(1) | 選澤一項 |
+| 可提供酬勞 | Pay | Varchar(50) | 不超過五十個字元的字串 |
+| 備註說明 | Remarks | Varchar(100) | 不超過一百個字元的字串 |
 ### 新增供給
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 時間 | Date;Time | Date(yyyy-mm-dd);Time() |
-| 到 | End_date;End_time | Date(yyyy-mm-dd);Time() |
-| 可接受上車範圍 | Range | Varchar(50) |
-| 可接受車程時間 | Drive_time | Varchar(10) |
-| 有無安全帽 | Helmet_check | Char(1) |
-| 備註說明 | Remarks | Varchar(100) |
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 時間 | Date;Time | Date(yyyy-mm-dd);Time() |  選擇一天日期 |
+| 到 | End_date;End_time | Date(yyyy-mm-dd);Time() | 選擇前項時間以後的時間  |
+| 可接受上車範圍 | Range | Varchar(50) | 不超過五十個字元的字串 |
+| 可接受車程時間 | Drive_time | Varchar(10) | 不超過十個字元的字串 |
+| 有無安全帽 | Helmet_check | Char(1) | 選澤一項 |
+| 備註說明 | Remarks | Varchar(100) | 不超過一百個字元的字串 |
 ### 聊天室
-| 欄位名稱 | 資料名稱 | 資料型態 |
-| :----------: |:----------: | :----------:|
-| 訊息框 | Texting_box | Varchar(100) |
+| 欄位名稱 | 資料名稱 | 資料型態 | 驗證規則 |
+| :----------: |:----------: | :----------:|:----------|
+| 訊息框 | Texting_box | Varchar(100) | 不超過一百個字元的字串 |
 ***
 ![媒合](媒合.PNG)
