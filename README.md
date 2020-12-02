@@ -126,7 +126,7 @@
 | 綁定手機 | Phone | Varchar(15) |
 | 設定密碼 |Password | Varchar(32) |
 | 確認密碼 |Password_check | Varchar(32) |
-| 上傳大頭照 | Images_Name | Chat(40) |
+| 上傳大頭照 | Images_Name | Varchar(40) |
 ***
 ### 駕照驗證
 | 欄位名稱 | 資料名稱 | 資料型態 |
