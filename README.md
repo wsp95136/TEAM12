@@ -125,7 +125,7 @@
 | 生日 | Birth | Date(yyyy-mm-dd) | 格式為YYYY/MM/DD |
 | 身分證字號 | Identity | Varchar(10) | 限十個字串，首位為英文且與數字組成 |
 | 綁定手機 | Phone | Varchar(15) | 十個數字字串，前兩碼為"09" |
-| 電子郵件 |  |   | 字串裡必須有"@"與"."  |
+| 電子郵件 | Email | Varchar(100) | 字串裡必須有"@"與"."  |
 | 設定密碼 |Password | Varchar(32) | 6～12個字元，至少要有2個以上英文，兩個以上數字，不得有符號 |
 | 確認密碼 |Password_check | Varchar(32) | 與"密碼"相同 |
 | 上傳大頭照 | Images_Name | Varchar(40) | 格式檔案為jpg、jpeg、bmp、png、pdf |
