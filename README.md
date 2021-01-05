@@ -1,5 +1,7 @@
 # OO_第九組
 ## 題目：高科大機車共乘媒合平台 
+## 期末簡報
+https://drive.google.com/file/d/1L__FB6kx5s2L1k-gc4VUOfZgVVBxtHio/view?usp=sharing
 ## 成員：
  * C107118209 黃湘雲
  * `C107118219 蔡佳蓁-組長`
