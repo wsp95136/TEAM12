@@ -173,9 +173,10 @@ https://drive.google.com/file/d/1L__FB6kx5s2L1k-gc4VUOfZgVVBxtHio/view?usp=shari
 ![媒合](媒合.PNG)
 ***
 ## ERD
+### 系統與司機
 ![系統與司機](系統與司機.png)
-### 平台與乘客
-![平台與乘客](平台與乘客.png)
+### 系統與乘客
+![系統與乘客](系統與乘客.png)
 ### 司機與乘客
 ![司機與乘客](司機與乘客.png)
 ![平台與管理者](平台與管理者.png)
